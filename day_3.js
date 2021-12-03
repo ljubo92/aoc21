@@ -22,9 +22,7 @@ const filterRows = (rows, position, gasType) => {
     if(!rows || rows && rows.length === 1) return rows;
   
     let score = 0;
-    let majorityNumber;
-    let minorityNumber;
-
+    
     for(let i = 0; i < rows.length; i++){
         rows[i][position] === '1' ? score++ : score;
     }
